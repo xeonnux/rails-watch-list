@@ -1,11 +1,22 @@
 .action {
-  background-image: url(https://images.unsplash.com/photo-1529775875285-b94026e1ceb2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+  background-image: url(https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
   width: 100%;
   background-size: cover;
   background-position: center;
+  box-shadow: 2px 2px 5px #909090;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 .options {
   top: 0;
-  right: 1rem;
+  right: 0.5rem;
+}
+
+.fa-folder-open {
+  color: white;
+  padding-left: 0.75rem;
+  font-size: 1.5rem;
 }
