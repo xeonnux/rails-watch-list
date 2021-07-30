@@ -1,0 +1,27 @@
+
+<h1>My List:</h1>
+<p>
+  <%= @list.name %>
+  <ul>
+  <% @list.movies.each do |movie| %>
+  <li>
+    <div class="movie-card d-flex justify-content-center align-items-center"
+         style="background-image: url('<%= movie.poster_url %>'); 
+         background-size: cover; background-position: center; 
+         height: 350px; width: 300px; position: relative;">
+    </div>
+  </li>
+  <li><h2 class="text-primary"><%= movie.title %></h2></li>
+  <li><p><b>Rating</b><%= movie.rating %></p></li>
+  <li><p><%= movie.overview %></p></li>
+<% movie.bookmarks.each do |bookmark| %>
+  <li><%= bookmark.comment %></li>
+  <% end %>
+  <% end %>
+  </ul>
+
+</p>
+
+<%= link_to 'Add', new_list_bookmark_path(@list) %> |
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', root_path %>
